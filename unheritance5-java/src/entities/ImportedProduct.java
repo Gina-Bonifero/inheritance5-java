@@ -20,7 +20,7 @@ public class ImportedProduct extends Product {
 		return customsFee;
 	}
 	
-	public void totalPrice(double price, double customsFee) {
+	public void totalPrice() {
 		price += customsFee;
 	}
 	

@@ -43,7 +43,7 @@ public class Program {
 				System.out.print("Customs fee: ");
 				double customsFee = sc.nextDouble();
 				ImportedProduct imp = new ImportedProduct(name, price, customsFee);
-				imp.totalPrice(price, customsFee);
+				imp.totalPrice();
 				list.add(imp);
 			}
 		}
