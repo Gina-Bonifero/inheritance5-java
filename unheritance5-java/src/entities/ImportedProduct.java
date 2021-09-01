@@ -8,7 +8,7 @@ public class ImportedProduct extends Product {
 	}
 	
 	public ImportedProduct(String name, Double price, Double customsFee) {
-		super();
+		super(name, price);
 		this.customsFee = customsFee;
 	}
 	
@@ -28,9 +28,9 @@ public class ImportedProduct extends Product {
 	public String toString() {
 		return name
 				+ " $ "
-				+ String.format("%.2f%", price)
+				+ String.format("%.2f", price)
 				+ " (Customs fee: $ "
-				+ String.format("%.2f%", customsFee)
+				+ String.format("%.2f", customsFee)
 				+ ")";
 	}
 }

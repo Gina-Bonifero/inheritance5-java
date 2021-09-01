@@ -13,7 +13,7 @@ public class UsedProduct extends Product {
 	}
 	
 	public UsedProduct(String name, Double price, Date manufactureDate) {
-		super();
+		super(name, price);
 		this.manufactureDate = manufactureDate;
 	}
 	
@@ -25,7 +25,7 @@ public class UsedProduct extends Product {
 	public String toString() {
 		return name 
 				+ " (used) $ " 
-				+ String.format("%.2f%", price)
+				+ String.format("%.2f", price)
 				+ " (Manufacture date: "
 				+ sdf.format(manufactureDate)
 				+ ")";
