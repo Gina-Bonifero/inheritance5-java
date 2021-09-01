@@ -28,9 +28,9 @@ public class ImportedProduct extends Product {
 	public String toString() {
 		return name
 				+ " $ "
-				+ String.format("%2.f%", price)
+				+ String.format("%.2f%", price)
 				+ " (Customs fee: $ "
-				+ String.format("%2.f%", customsFee)
+				+ String.format("%.2f%", customsFee)
 				+ ")";
 	}
 }
